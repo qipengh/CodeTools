@@ -1,8 +1,8 @@
 # Docker容器
 
 1. docker 已经在运行了，怎么打开超过一个的终端？
- docker ps 找到你要进入的container的 id，然后用 docker exec 执行一个 bash。
- 如：`docker exec -it 40c330755e61 /bin/bash`
+
+docker ps 找到你要进入的container的 id，然后用 docker exec 执行一个 bash。如：`docker exec -it 40c330755e61 /bin/bash`
 这样你就进到这个container 里面了，这个bash退出也不会影响之前 docker run 启动的 bash
 如果需要其他参数可以参考docker 手册 man docker-exec ，man docker-run 等等
 

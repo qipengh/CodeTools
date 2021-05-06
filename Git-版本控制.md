@@ -1,9 +1,11 @@
 # Git 基本版本控制
 
 ![git工作流程](./imgs/git-0.png)
-![仓库分布](./imgs/git-1.png)
+
+![仓库分布](./imgs/git-1.jpg)
 
 - 功能列表
+
 |  命令 | 说明  |
 |---|---|
 | `git status ./`  | 显示工作路径下所有已修改的文件  |
@@ -21,20 +23,24 @@
 | git stash clear  | 清空git栈  |
 | git rebase -i HEAD~3  | 合并3个commit；git push -f更新远端  |
 | git submodule update --init --recursive  | 拉取并更新子仓库  |
-| git push origin hqp_testbench	  |   |
+| git remote -v | 查看远程库信息  |
+| git push [远程库名] [分支名]	  |  推送到远程库的指定分支 |
 
 - tig status	查看代码合并细节
-s	查看本地修改(同上)
-e	进入代码文件
-u	添加到本地仓库（git add）
+
+s	查看本地修改(同上)；
+e	进入代码文件；
+u	添加到本地仓库（git add）；
 q	退出到上一层
 
 - 注：
+
 使用git reflog show命令,可以查看完整的提交历史；
 使用git reset --hard commit_id，进行版本回退；
 使用git revert commit_id命令，撤销某次提交的修改。
 
 - 代码仓库同步到码云
+
 |[ GitHub 项目导入码云](https://blog.gitee.com/2018/06/05/github_to_gitee/)|--|[廖雪峰-使用Gitee](https://www.liaoxuefeng.com/wiki/896043488029600/1163625339727712)|
 
 **参考**

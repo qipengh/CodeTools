@@ -1,10 +1,10 @@
 # Code工作台（工欲善其事必先利其器）
 
 - 通用
-编辑器、Docker、Git
 - Linux工作台
 - Windows工作台
 ## 通用
+编辑器、Docker、Git
 1. 解压压缩：`Bandizip`
 2. 护眼：`flux`、`Redshift`
 3. pdf阅读器：福昕阅读器
@@ -50,6 +50,7 @@ c++filt、nm
 
 #### 1、Terminator终端
 - 配置
+
 安装`sudo apt-get install terminator`，配置文件`~/.config/terminator/config`，具体配置参考[terminator_config](https://gitee.com/qipengh/CodeTools/tree/main/configs/terminator_config)
 
 bashrc配置参考[bashrc](https://gitee.com/qipengh/CodeTools/tree/main/configs/bashrc)
@@ -65,6 +66,7 @@ bashrc配置参考[bashrc](https://gitee.com/qipengh/CodeTools/tree/main/configs
 #### 2、Tmux(终端复用器)
 - [Tmux 使用教程](http://www.ruanyifeng.com/blog/2019/10/tmux.html)
 - 翻页翻屏
+
 进入tmux翻屏模式(先按 ctrl ＋ｂ，松开，然后再按 [ )；上下翻页（PgUp、PgDn）；退出(q)
 
 #### 3、Vim配置
@@ -72,7 +74,7 @@ bashrc配置参考[bashrc](https://gitee.com/qipengh/CodeTools/tree/main/configs
 
 - 详细配置：解压`./configs/vim.tar.gz`-安装插件`vim +PluginInstall +qall`
 
-- 参考
+**参考**
 1. [vim插件管理器：Vundle](https://blog.csdn.net/zhangpower1993/article/details/52184581)
 2. [Vundle：Vim Plugin](https://blog.gtwang.org/linux/vundle-vim-bundle-plugin-manager/)
 参考：[Vim配置](https://gitee.com/qipengh/CodeTools/tree/main/Linux/Vim)

@@ -14,6 +14,7 @@
 VS Code（`code神器`）、Sourcetrail（免费开源）、Source Insight（收费）
 
 - Visual Studio Code（免费、开源、神器）
+
 1、配置：|[VSCode-开发效率翻倍](https://zhuanlan.zhihu.com/p/54164612)|--|[VSCode C++ 开发利器](https://zhuanlan.zhihu.com/p/96819625)|--|[awesome-vscode](https://github.com/viatsko/awesome-vscode)|
 2、使用：[VS Code 的常用快捷键](https://zhuanlan.zhihu.com/p/44044896)
 
@@ -37,12 +38,12 @@ VS Code（`code神器`）、Sourcetrail（免费开源）、Source Insight（收
 5. 三剑客vim+ctags+cscope、两板斧doxygen gdb：[Linux 平台下阅读源码的工具](https://www.jianshu.com/p/09e74b05fd5d)
 
 #### 相见恨晚的Linux命令
-c++filt、nm
+**c++filt、nm**
 - c++filt：还原so中的函数名
 - nm：显示指定File中符号信息
 - ldd: 查看程序依赖库
 
-查看文件和文件夹大小 -[知乎](https://zhuanlan.zhihu.com/p/44710698)-
+**查看文件和文件夹大小** |[参考](https://zhuanlan.zhihu.com/p/44710698)|
 - `ls  -l filename`：文件大小
 - `du -sh`：文件夹大小（所有文件大小的总和）`du -h --max-depth=1 dir` `du -h --max-depth=0 dir/*`
 - `df -h`：文件系统各分区大小

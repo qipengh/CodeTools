@@ -25,10 +25,10 @@ VS Code（`code神器`）、Sourcetrail（免费开源）、Source Insight（收
 - Source Insight（收费）
 
 ### Git 基本版本控制
-参考：[Git-版本控制](https://gitee.com/qipengh/CodeTools/tree/main/Git-版本控制.md)
+参考：[Git-版本控制](https://github.com/qipengh/CodeTools/blob/main/Git-版本控制.md)
 
 ### Docker容器
-参考：[Docker-容器](https://gitee.com/qipengh/CodeTools/tree/main/Docker-容器.md)
+参考：[Docker-容器](https://github.com/qipengh/CodeTools/blob/main/Docker-容器.md)
 
 ## Linux工作台
 - 教程
@@ -53,9 +53,9 @@ VS Code（`code神器`）、Sourcetrail（免费开源）、Source Insight（收
 #### 1、Terminator终端
 - 配置
 
-安装`sudo apt-get install terminator`，配置文件`~/.config/terminator/config`，具体配置参考[terminator_config](https://gitee.com/qipengh/CodeTools/tree/main/configs/terminator_config)
+安装`sudo apt-get install terminator`，配置文件`~/.config/terminator/config`，具体配置参考[terminator_config](https://github.com/qipengh/CodeTools/blob/main/configs/terminator_config)
 
-bashrc配置参考[bashrc](https://gitee.com/qipengh/CodeTools/tree/main/configs/bashrc)
+bashrc配置参考[bashrc](https://github.com/qipengh/CodeTools/blob/main/configs/bashrc)
 
 - 快捷键
 1. 终端：打开（`Ctrl+Shift+T`）、关闭当前（`Ctrl+Shift+W`）
@@ -72,14 +72,14 @@ bashrc配置参考[bashrc](https://gitee.com/qipengh/CodeTools/tree/main/configs
 进入tmux翻屏模式(先按 ctrl ＋ｂ，松开，然后再按 [ )；上下翻页（PgUp、PgDn）；退出(q)
 
 #### 3、Vim配置
-- 简单配置参考：[simple_vimrc](https://gitee.com/qipengh/CodeTools/tree/main/configs/simple_vimrc)
+- 简单配置参考：[simple_vimrc](https://github.com/qipengh/CodeTools/blob/main/configs/simple_vimrc)
 
 - 详细配置：解压`./configs/vim.tar.gz`-安装插件`vim +PluginInstall +qall`
 
 **参考**
 1. [vim插件管理器：Vundle](https://blog.csdn.net/zhangpower1993/article/details/52184581)
 2. [Vundle：Vim Plugin](https://blog.gtwang.org/linux/vundle-vim-bundle-plugin-manager/)
-参考：[Vim配置](https://gitee.com/qipengh/CodeTools/tree/main/Linux/Vim)
+参考：[Vim配置](https://github.com/qipengh/CodeTools/blob/main/Linux/Vim)
 
 # 编译与调试
 GCC、GDB、Valgrind

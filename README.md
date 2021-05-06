@@ -16,6 +16,7 @@ VS Code（`code神器`）、Sourcetrail（免费开源）、Source Insight（收
 - Visual Studio Code（免费、开源、神器）
 
 1、配置：|[VSCode-开发效率翻倍](https://zhuanlan.zhihu.com/p/54164612)|--|[VSCode C++ 开发利器](https://zhuanlan.zhihu.com/p/96819625)|--|[awesome-vscode](https://github.com/viatsko/awesome-vscode)|
+
 2、使用：[VS Code 的常用快捷键](https://zhuanlan.zhihu.com/p/44044896)
 
 - Sourcetrail（开源、免费、源码可视化）

@@ -1,0 +1,34 @@
+```Bash
+'''命令行（~/.bashrc）'''
+force_color_prompt=yes
+
+# terminal title
+function title() {
+  if [[ -z "$ORIG"   ]]; then
+    ORIG=$PS1
+  fi
+  TITLE="\[\e]2;$*\a\]"
+  PS1=${ORIG}${TITLE}
+}
+
+# fast dir
+alias ws='cd /projs/framework/huangqipeng/'
+alias tf1='cd /projs/framework/huangqipeng/tf1/tensorflow-v1.10/'
+alias tf2='cd /projs/framework/huangqipeng/tf2/tensorflow-v1.10/'
+alias tf3='cd /projs/framework/huangqipeng/tf3/tensorflow-v1.10/'
+alias tfm='cd /projs/framework/huangqipeng/tfm/tensorflow_models/'
+# bazel
+export PATH=/data/tensorflow/tools/bazels/bazel-0.24.1/bin:$PATH
+export TEST_TMPDIR=/tmp/huangqipeng/bazel_cache/tf/cpu
+# neuware
+export NEUWARE_HOME=/projs/framework/huangqipeng/tf1/tensorflow-v1.10/install_dir/usr/local/neuware
+# http
+#export http_proxy=http://xxx
+#export https_proxy=http://xxx
+# docker
+mkdir -p /tmp/huangqipeng/docker /tmp/huangqipeng/run
+export XDG_RUNTIME_DIR=/tmp/huangqipeng/run
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+export PATH=/tools/docker-rootless:$PATH
+
+```

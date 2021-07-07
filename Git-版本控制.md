@@ -26,6 +26,14 @@
 | git remote -v | 查看远程库信息  |
 | git push [远程库名] [分支名]	  |  推送到远程库的指定分支 |
 
+- git diff  查看代码修改差异
+|  命令 | 说明  |
+|---|---|
+| `git diff branch1 branch2`  | 显示出所有有差异的文件的详细差异  |
+| `git diff branch1 branch2 具体文件路径`  | 显示指定文件的详细差异  |
+| `git diff branch1 branch2 --stat`  | 显示出所有有差异的文件列表 |
+| `git diff branch1 branch2 --stat [path]`  | 查询两个分支某个路径下的差异文件列表 |
+
 - tig status	查看代码合并细节
 
 s	查看本地修改(同上)；

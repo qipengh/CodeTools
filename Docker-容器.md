@@ -6,12 +6,21 @@ docker ps 找到你要进入的container的 id，然后用 docker exec 执行一
 这样你就进到这个container 里面了，这个bash退出也不会影响之前 docker run 启动的 bash
 如果需要其他参数可以参考docker 手册 man docker-exec ，man docker-run 等等
 
-**关键字与命令**
-- docker：获取命令（`docker`）了解指定命令（`docker [command] --help`）
-- image-镜像：拉取（`docker pull`）、列出本地镜像（` docker images`）、删除（`docker rmi`）
-- 容器：查看（`docker ps -a`）、启动（`docker run`）、停止（`docker stop`）、重启（`docker restart`）、进入（`docker arttach`；`docker exec`：退出终端不停止）、导出（`docker export`）、导入（`docker import`）、删除（docker rm）
-- 终端：退出（`exit`）
+## 关键字
 
+**docker**<br>
+获取命令（`docker`）了解指定命令（`docker [command] --help`）
+
+**image-镜像**<br>
+拉取（`docker pull`）、列出本地镜像（` docker images`）、删除（`docker rmi`）
+
+**容器**<br>
+查看（`docker ps -a`）、启动（`docker run`）、停止（`docker stop`）、重启（`docker restart`）、删除（docker rm）、<br>进入（`docker arttach`；`docker exec`：退出终端不停止）、导出（`docker export`）、导入（`docker import`）
+
+**终端**<br>
+退出（`exit`）
+
+## 命令案例
 `举个栗子:`
 ```bash
 # 拉取镜像（docker pull [OPTIONS] NAME[:TAG|@DIGEST]）
@@ -26,9 +35,13 @@ docker run --name waveglow \
 			nvcr.io/nvidia/pytorch:20.03-py3 /bin/bash
 # 进入容器，退出终端不会关闭容器
 docker exec -it waveglow /bin/bash
+
 # 导出容器
 docker export 1e560fca3906 > ubuntu.tar
 # 导入容器
 cat docker/ubuntu.tar | docker import - test/ubuntu:v1
 docker import http://example.com/exampleimage.tgz example/imagerepo
+
+# 根据container_name关键字，停止或删除docker
+docker ps -a --format '{{.Names}}' | grep xxx | xargs docker stop
 ```

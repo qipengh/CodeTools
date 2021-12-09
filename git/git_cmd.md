@@ -1,8 +1,8 @@
 # Git 基本版本控制
 
-![git工作流程](./imgs/git-0.png)
+![git工作流程](imgs/git-0.png)
 
-![仓库分布](./imgs/git-1.jpg)
+![仓库分布](imgs/git-1.jpg)
 
 - 功能列表
 
@@ -48,11 +48,3 @@ q	退出到上一层
 使用git reset --hard commit_id，进行版本回退；
 使用git revert commit_id命令，撤销某次提交的修改。
 
-- 代码仓库同步到码云
-
-|[ GitHub 项目导入码云](https://blog.gitee.com/2018/06/05/github_to_gitee/)|--|[廖雪峰-使用Gitee](https://www.liaoxuefeng.com/wiki/896043488029600/1163625339727712)|
-
-**参考**
-- [看完这篇还不会用Git，那我就哭了！](https://zhuanlan.zhihu.com/p/94008510)
-- [知乎-Git](https://www.zhihu.com/search?type=content&q=Git)
-- [猴子都能懂的Git入门](https://backlog.com/git-tutorial/cn/)

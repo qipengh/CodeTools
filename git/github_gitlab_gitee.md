@@ -1,7 +1,7 @@
 
 # 使用github、gitlab、gitee
 
-**同一台机器使用github、gitlab**
+## **如何同时使用 github 和 gitlab**
 
 1、创建各自的私钥/公钥
 

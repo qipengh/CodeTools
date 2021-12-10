@@ -1,8 +1,8 @@
 # Git 基本版本控制
 
-![git工作流程](imgs/git-0.png)
+![git工作流程](../imgs/git-0.png)
 
-![仓库分布](imgs/git-1.jpg)
+![仓库分布](../imgs/git-1.jpg)
 
 - 功能列表
 

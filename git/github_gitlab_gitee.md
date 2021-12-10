@@ -3,6 +3,8 @@
 
 ## **如何同时使用 github 和 gitlab**
 
+### 搭建 ssh clone 环境
+
 1、创建各自的私钥/公钥
 
 针对不同的仓库，生成不同的密钥（因为不同的账号，对应不同的用户名和邮箱）
@@ -71,6 +73,43 @@ $ git config --local user.name 'username' #github账号名称
 $ git config --local user.email 'username@gmail.com' #github账号邮箱
 ```
 
+### 操作本地仓库
+
+两种方式：
+
+**1、创建单独命名的 Remotes**
+
+```bash
+# 如果 GitLab 是主要存储库，那么可以为 GitHub 添加一个远程主机
+git remote add github https://github.com/user/repo.git
+
+# 将更改推送到任一存储库
+git push origin <branch>   (GitLab)
+git push github <branch>   (GitHub)
+
+# 下拉远端的更改
+git pull origin <branch>   (GitLab)
+git pull github <branch>   (GitHub)
+```
+
+当在 GitLab 主机上工作时，只需通过push“master”分支来定期更新 GitHub 镜像。
+相反，如果社区中有人向 GitHub 镜像提交push请求，则工作流程如下：
+1. Review and merge the push request on GitHub
+2. Pull “master” into your local workspace
+3. Push “master” to GitLab
+
+**2、用两个 Remotes 重载 Origin**
+
+```bash
+# 对于您是唯一开发人员的项目，可以采用更简单的方式访问 GitHub 镜像
+git remote set-url –add origin https://github.com/user/repo.git
+
+# overloading the default “origin” name to reference both GitLab and GitHub
+git push origin <branch>
+git pull origin <branch>
+```
+
 **参考**
 
 - [如何在同一台电脑上使用github和gitlab](https://segmentfault.com/a/1190000014626841###)
+- [How to Use GitLab and GitHub Together](https://steveperkins.com/migrating-projects-from-github-to-gitlab/)

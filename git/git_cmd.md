@@ -48,3 +48,6 @@ q	退出到上一层
 使用git reset --hard commit_id，进行版本回退；
 使用git revert commit_id命令，撤销某次提交的修改。
 
+- git clone 非master分支 xxx
+` git clone -b xxx https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git`
+

@@ -13,7 +13,11 @@
 # 使用不同的代码仓库（github、gitlab、gitee）
 
 - [使用github、gitlab、gitee](./github_gitlab_gitee.md)
-
-
 - [ GitHub 项目导入码云](https://blog.gitee.com/2018/06/05/github_to_gitee/)
 - [廖雪峰-使用Gitee](https://www.liaoxuefeng.com/wiki/896043488029600/1163625339727712)
+
+# git fork 后如何同步更新
+
+- [Working with forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork)
+
+除了以上方法，还可`git rebase upstream/master`，commit顺序不会改变。
